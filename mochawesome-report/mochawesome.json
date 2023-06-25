@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-25T13:45:47.874Z",
+    "end": "2023-06-25T13:45:48.408Z",
+    "duration": 534,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5f0c3962-440b-4646-bf23-8b6812231cf5",
+      "title": "",
+      "fullFile": "E:\\Sanbercode\\sanbermocha\\test\\spec\\getUser.spec.js",
+      "file": "\\test\\spec\\getUser.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66917587-2fdd-4d51-b423-a849b2d57cd5",
+          "title": "GET /users",
+          "fullFile": "E:\\Sanbercode\\sanbermocha\\test\\spec\\getUser.spec.js",
+          "file": "\\test\\spec\\getUser.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "returns page users 2",
+              "fullTitle": "GET /users returns page users 2",
+              "timedOut": false,
+              "duration": 331,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const query1 = \"2\";\nconst response = await getUserPages(query1); // page = 2 query params\nexpect(response.status).to.equal(200);\nexpect(response.body.data.length).to.equal(6);",
+              "err": {},
+              "uuid": "3ae00168-a320-48d5-943f-97d0835b9106",
+              "parentUUID": "66917587-2fdd-4d51-b423-a849b2d57cd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "returns page users 3",
+              "fullTitle": "GET /users returns page users 3",
+              "timedOut": false,
+              "duration": 189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const query1 = \"3\";\nconst response = await getUserPages(query1); // page = 3 query params\nexpect(response.status).to.equal(200);\nexpect(response.body.data.length).to.equal(0);",
+              "err": {},
+              "uuid": "6889eb3e-5316-41a3-afa8-1dd2ec7a4e1c",
+              "parentUUID": "66917587-2fdd-4d51-b423-a849b2d57cd5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3ae00168-a320-48d5-943f-97d0835b9106",
+            "6889eb3e-5316-41a3-afa8-1dd2ec7a4e1c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 520,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
